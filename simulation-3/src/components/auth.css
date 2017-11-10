@@ -1,0 +1,47 @@
+.maintwo{
+   background-image: 
+   linear-gradient(99deg,#ff70a6, #ff9770 40%, #ffd670 73%, #e9ff70);
+
+height:100vh;
+display:flex;
+flex-direction:column;
+align-items:center;
+align-content:space-between;
+
+}
+
+.square{
+    height:300px;
+    width:400px;
+    background-image: 
+    linear-gradient(97deg,#ff7a6e,#ff9770);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    padding-left:10px;
+    align-items:center;
+    align-content:space-between;
+    border-radius:.5em;
+    BOX-SHADOW:
+    rgba(0, 0, 0, 0.1) 0px 10px 20px 0px, rgba(0, 0, 0, 0.2) 0px 6px 6px 0px;
+    margin-top:200px;
+    padding:10px;
+
+}
+
+.helo{
+    font-size:80px;
+    font-weight:bold;
+}
+
+button{
+    background-color:#403d39;
+    border-radius:5px;
+    border-color:#403d39;
+    font-size:20px;
+    color:white;
+    font-family:sans-serif;
+    height:45px;
+    width:340px;
+}
