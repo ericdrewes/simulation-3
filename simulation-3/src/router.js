@@ -6,5 +6,6 @@ import LandingPage from './components/LandingPage';
 export default (
 	<Switch>
 		<Route exact path="/" component={LandingPage} />
+		
 	</Switch>
 );

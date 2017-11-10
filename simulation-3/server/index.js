@@ -11,7 +11,7 @@ const { secret } = require('./config').session;
 const { domain, clientID, clientSecret } = require('./config.js').auth0;
 
 const port = 3001;
-const connectionString = `postgres://${dbUser}@localhost/${database}`; // or -> require('./config').massive
+const connectionString = require('./config').massive
 
 const app = express();
 
