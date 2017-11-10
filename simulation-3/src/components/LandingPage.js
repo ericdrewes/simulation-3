@@ -19,6 +19,7 @@ class LandingPage extends Component {
 		return (
 			<div>
 				<h1>Hello World</h1>
+				{this.props.user.id && <div>{this.props.user.id}</div>}
 			</div>
 		);
 	}
