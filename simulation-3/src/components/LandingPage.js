@@ -11,7 +11,7 @@ class LandingPage extends Component {
 	}
 
 	componentDidMount() {
-		this.props.requestUser;
+		this.props.requestUser();
 	}
 
 	render() {
@@ -19,7 +19,7 @@ class LandingPage extends Component {
 		return (
 			<div>
 				<h1>Hello World</h1>
-				{this.props.user.id && <div>{this.props.user.id}</div>}
+				<div> </div>
 			</div>
 		);
 	}

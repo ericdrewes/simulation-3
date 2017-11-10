@@ -15,7 +15,6 @@ const port = 3001;
 // const connectionString = `postgres://${dbUser}@localhost/${database}`;
 const connectionString = require('./config').massive;
 
-
 const app = express();
 
 // app.use(express.static(`${__dirname}/build`));
@@ -51,6 +50,7 @@ passport.use(
 				.get('db')
 				.getUserByAuthID(profile.id)
 				.then(response => {
+					console.log(response);
 					if (!response[0]) {
 						app
 							.get('db')
@@ -62,7 +62,9 @@ passport.use(
 					} else {
 						return done(null, response[0]);
 					}
-				});
+				})
+				.catch(console.log);
+			return done(null, profile);
 		}
 	)
 );
